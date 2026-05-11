@@ -525,3 +525,27 @@ em, .italic { font-style: italic; }
     box-shadow: none;
   }
 }
+
+/* ---------- A11y ---------- */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  background: var(--forest);
+  color: var(--off);
+  padding: 8px 14px;
+  border-radius: 6px;
+  z-index: 100;
+  transition: top 0.2s;
+  font-size: 13px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

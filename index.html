@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body class="bg-[var(--off)] text-[var(--ink)] font-sans antialiased">
+  <a href="#hero" class="skip-link">Skip to content</a>
 
   <header id="topbar" class="sticky top-0 z-50 bg-[var(--off)]/95 backdrop-blur-sm border-b border-transparent transition-colors">
     <div class="max-w-[1100px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
@@ -48,7 +49,7 @@
   </header>
 
   <main>
-    <section id="hero" class="relative overflow-hidden bg-[var(--sand)]">
+    <section id="hero" aria-labelledby="hero-h1" class="relative overflow-hidden bg-[var(--sand)]">
       <div class="hero-leaf hero-leaf-1" aria-hidden="true"></div>
       <div class="hero-leaf hero-leaf-2" aria-hidden="true"></div>
 
@@ -57,7 +58,7 @@
 
           <div>
             <p class="eyebrow">Mental health support</p>
-            <h1 class="serif hero-h1">
+            <h1 id="hero-h1" class="serif hero-h1">
               <span class="word">Every</span>
               <span class="word italic">piece</span>
               <span class="word">of you</span>
@@ -91,12 +92,12 @@
         <span class="marquee-item">anxiety <span class="dot"></span> grief <span class="dot"></span> burnout <span class="dot"></span> shame &amp; guilt <span class="dot"></span> life transitions <span class="dot"></span> neurodiversity <span class="dot"></span> feeling not like yourself <span class="dot"></span> low mood <span class="dot"></span> stress <span class="dot"></span></span>
       </div>
     </div>
-    <section id="services" class="bg-[var(--off)] py-20 lg:py-24">
+    <section id="services" aria-labelledby="services-h2" class="bg-[var(--off)] py-20 lg:py-24">
       <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
 
         <div class="section-head">
           <p class="eyebrow">What we offer</p>
-          <h2 class="serif">Three ways to find <em>support</em>.</h2>
+          <h2 id="services-h2" class="serif">Three ways to find <em>support</em>.</h2>
           <p class="opacity-70">Whether you're seeking individual healing, building a healthier workplace, or growing alongside a community — there's a place to begin.</p>
         </div>
 
@@ -140,14 +141,14 @@
         <div class="stat"><div class="stat-n serif italic">100%</div><div class="stat-label">Queer-affirmative</div></div>
       </div>
     </section>
-    <section id="founder" class="bg-[var(--off)] py-20 lg:py-24">
+    <section id="founder" aria-labelledby="founder-h2" class="bg-[var(--off)] py-20 lg:py-24">
       <div class="max-w-[1040px] mx-auto px-6 lg:px-10 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 items-center">
 
         <div class="founder-photo" role="img" aria-label="Portrait of Anshita Gaur"></div>
 
         <div>
           <p class="eyebrow">Meet your therapist</p>
-          <h2 class="serif founder-h2">Hi, I'm <em>Anshita</em>.</h2>
+          <h2 id="founder-h2" class="serif founder-h2">Hi, I'm <em>Anshita</em>.</h2>
           <p class="founder-quote serif italic">
             <span class="founder-q" aria-hidden="true">"</span>Showing up as you are is the most courageous thing you can do — and you don't have to do it alone.
           </p>
@@ -159,10 +160,10 @@
 
       </div>
     </section>
-    <section id="voices" class="bg-[var(--clay)] py-20 lg:py-24 overflow-hidden">
+    <section id="voices" aria-labelledby="voices-h2" class="bg-[var(--clay)] py-20 lg:py-24 overflow-hidden">
       <div class="section-head" style="padding: 0 24px;">
         <p class="eyebrow">Voices</p>
-        <h2 class="serif" style="color: var(--forest);">What people <em>have to say</em>.</h2>
+        <h2 id="voices-h2" class="serif" style="color: var(--forest);">What people <em>have to say</em>.</h2>
       </div>
 
       <div class="testi-track-wrap">
@@ -220,11 +221,11 @@
         </div>
       </div>
     </section>
-    <section id="moments" class="bg-[var(--off)] py-20 lg:py-24">
+    <section id="moments" aria-labelledby="moments-h2" class="bg-[var(--off)] py-20 lg:py-24">
       <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
         <div class="section-head">
           <p class="eyebrow">Moments</p>
-          <h2 class="serif">Glimpses from our <em>community</em>.</h2>
+          <h2 id="moments-h2" class="serif">Glimpses from our <em>community</em>.</h2>
         </div>
 
         <div class="mosaic-grid">
@@ -236,12 +237,12 @@
         </div>
       </div>
     </section>
-    <section id="faq" class="bg-[var(--sand)] py-20 lg:py-24">
+    <section id="faq" aria-labelledby="faq-h2" class="bg-[var(--sand)] py-20 lg:py-24">
       <div class="max-w-[1040px] mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_1.4fr] gap-14 items-start">
 
         <div>
           <p class="eyebrow">FAQ</p>
-          <h2 class="serif faq-h2">Things you might be <em>wondering</em>.</h2>
+          <h2 id="faq-h2" class="serif faq-h2">Things you might be <em>wondering</em>.</h2>
           <p class="opacity-70 mb-6 mt-3">Therapy looks different for everyone. Here are some common questions — and if yours isn't here, write to us.</p>
           <a href="mailto:hello@pieceofmind.co.in" class="btn-primary">Ask a question</a>
         </div>
@@ -279,11 +280,11 @@
         </div>
       </div>
     </section>
-    <section id="cta" class="cta-strip bg-[var(--forest)] text-[var(--off)] py-20 lg:py-24 px-6 text-center relative overflow-hidden">
+    <section id="cta" aria-labelledby="cta-h2" class="cta-strip bg-[var(--forest)] text-[var(--off)] py-20 lg:py-24 px-6 text-center relative overflow-hidden">
       <div class="cta-deco cta-deco-1" aria-hidden="true"></div>
       <div class="cta-deco cta-deco-2" aria-hidden="true"></div>
       <div class="relative max-w-2xl mx-auto">
-        <h2 class="serif cta-h2">Whenever you're <em>ready.</em></h2>
+        <h2 id="cta-h2" class="serif cta-h2">Whenever you're <em>ready.</em></h2>
         <p class="opacity-80 mt-3 mb-7">Book a free 15-minute consultation. No pressure to continue.</p>
         <a href="book.html" class="btn-primary cta-btn">Book a Therapy Session →</a>
       </div>
