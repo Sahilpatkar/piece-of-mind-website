@@ -246,3 +246,18 @@ em, .italic { font-style: italic; }
 .offer-body h3 { font-size: 26px; margin: 0 0 10px; font-weight: 500; }
 .offer-body p { font-size: 14px; line-height: 1.55; opacity: 0.78; margin: 0 0 22px; }
 .offer-link { font-size: 13px; font-weight: 500; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+
+/* ---------- Stats ---------- */
+.stat-n {
+  font-size: clamp(38px, 4vw, 52px);
+  color: var(--forest);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.stat-label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
