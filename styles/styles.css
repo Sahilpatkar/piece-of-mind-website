@@ -1,0 +1,30 @@
+/* ---------- Brand variables ---------- */
+:root {
+  --forest: #2C3E3E;
+  --sage: #B7C9B3;
+  --sand: #F2E9DC;
+  --clay: #DDBEBE;
+  --off: #FBFAF7;
+  --ink: #2C3E3E;
+}
+
+/* ---------- Base ---------- */
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--ink);
+  background: var(--off);
+  -webkit-font-smoothing: antialiased;
+}
+.serif { font-family: 'Playfair Display', Georgia, serif; }
+em, .italic { font-style: italic; }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
