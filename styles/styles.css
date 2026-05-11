@@ -293,3 +293,67 @@ em, .italic { font-style: italic; }
   color: var(--clay);
   margin-right: 6px;
 }
+
+/* ---------- Testimonials ---------- */
+.testi-track-wrap {
+  position: relative;
+}
+.testi-track-wrap::before,
+.testi-track-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 3;
+  pointer-events: none;
+}
+.testi-track-wrap::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--clay), transparent);
+}
+.testi-track-wrap::after {
+  right: 0;
+  background: linear-gradient(-90deg, var(--clay), transparent);
+}
+.testi-track {
+  display: flex;
+  gap: 22px;
+  padding: 10px 24px;
+  width: max-content;
+  animation: scroll-x 40s linear infinite;
+}
+.testi-track:hover { animation-play-state: paused; }
+
+.testi-card {
+  flex: 0 0 320px;
+  background: var(--off);
+  padding: 28px 26px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(44,62,62,0.08);
+}
+.testi-card--dark {
+  background: var(--forest);
+  color: var(--off);
+}
+.testi-q {
+  font-size: 56px;
+  line-height: 0.5;
+  opacity: 0.55;
+  display: block;
+  margin-bottom: 4px;
+  color: var(--clay);
+}
+.testi-card--dark .testi-q { color: var(--sage); }
+.testi-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 14px;
+  opacity: 0.92;
+}
+.testi-author {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
