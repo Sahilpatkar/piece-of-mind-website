@@ -482,3 +482,21 @@ em, .italic { font-style: italic; }
 .cta-btn:hover {
   box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
+
+/* ---------- Footer ---------- */
+.foot-soc {
+  width: 30px;
+  height: 30px;
+  background: rgba(251, 250, 247, 0.1);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--off);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.foot-soc:hover {
+  background: rgba(251, 250, 247, 0.2);
+}

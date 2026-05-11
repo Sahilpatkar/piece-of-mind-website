@@ -25,8 +25,14 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  function initFooterYear() {
+    const el = document.getElementById('footYear');
+    if (el) el.textContent = String(new Date().getFullYear());
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initStickyScroll();
+    initFooterYear();
   });
 })();
