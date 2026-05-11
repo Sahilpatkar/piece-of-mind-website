@@ -323,7 +323,10 @@ em, .italic { font-style: italic; }
   width: max-content;
   animation: scroll-x 40s linear infinite;
 }
-.testi-track:hover { animation-play-state: paused; }
+.testi-track:hover,
+.testi-track:focus-within { animation-play-state: paused; }
+.marquee-track:hover,
+.marquee-track:focus-within { animation-play-state: paused; }
 
 .testi-card {
   flex: 0 0 320px;

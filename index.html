@@ -21,7 +21,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 </head>
 <body class="bg-[var(--off)] text-[var(--ink)] font-sans antialiased">
-  <a href="#hero" class="skip-link">Skip to content</a>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <header id="topbar" class="sticky top-0 z-50 bg-[var(--off)]/95 backdrop-blur-sm border-b border-transparent transition-colors">
     <div class="max-w-[1100px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
@@ -55,7 +55,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="hero" aria-labelledby="hero-h1" class="relative overflow-hidden bg-[var(--sand)]">
       <div class="hero-leaf hero-leaf-1" aria-hidden="true"></div>
       <div class="hero-leaf hero-leaf-2" aria-hidden="true"></div>
@@ -236,11 +236,11 @@
         </div>
 
         <div class="mosaic-grid">
-          <div class="mosaic-tile mosaic-tile--lg mosaic-tile-1"><span class="mosaic-label">Workshop · Pune</span></div>
-          <div class="mosaic-tile mosaic-tile-2"><span class="mosaic-label">Stress management session</span></div>
-          <div class="mosaic-tile mosaic-tile-3"><span class="mosaic-label">Community circle</span></div>
-          <div class="mosaic-tile mosaic-tile-4"><span class="mosaic-label">Corporate · TealFeed</span></div>
-          <div class="mosaic-tile mosaic-tile-5"><span class="mosaic-label">Reflection space</span></div>
+          <div class="mosaic-tile mosaic-tile--lg mosaic-tile-1" role="img" aria-label="Workshop in Pune"><span class="mosaic-label">Workshop · Pune</span></div>
+          <div class="mosaic-tile mosaic-tile-2" role="img" aria-label="Stress management session"><span class="mosaic-label">Stress management session</span></div>
+          <div class="mosaic-tile mosaic-tile-3" role="img" aria-label="Community circle"><span class="mosaic-label">Community circle</span></div>
+          <div class="mosaic-tile mosaic-tile-4" role="img" aria-label="Corporate workshop with TealFeed"><span class="mosaic-label">Corporate · TealFeed</span></div>
+          <div class="mosaic-tile mosaic-tile-5" role="img" aria-label="Reflection space"><span class="mosaic-label">Reflection space</span></div>
         </div>
       </div>
     </section>
@@ -334,7 +334,7 @@
       <div>
         <h4 class="serif italic text-lg mb-4">Get in touch</h4>
         <ul class="space-y-2 text-[13px] opacity-80">
-          <li>hello@pieceofmind.co.in</li>
+          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80">hello@pieceofmind.co.in</a></li>
           <li>+91 — to be added</li>
           <li>Pune, India</li>
         </ul>
