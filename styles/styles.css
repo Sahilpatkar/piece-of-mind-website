@@ -500,3 +500,28 @@ em, .italic { font-style: italic; }
 .foot-soc:hover {
   background: rgba(251, 250, 247, 0.2);
 }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .hero-leaf-1 { width: 180px; height: 180px; }
+  .hero-leaf-2 { width: 160px; height: 160px; right: -60px; top: 200px; }
+  .hero-mini { width: 110px; bottom: -22px; left: -22px; font-size: 13px; }
+}
+
+@media (max-width: 768px) {
+  .hero-mini { width: 96px; bottom: -16px; left: -16px; font-size: 12px; padding: 10px; }
+  .testi-card { flex: 0 0 280px; }
+  .marquee-track { font-size: 18px; animation-duration: 45s; }
+  .offer-card:hover { transform: translateY(-3px); }
+  .stat-n { font-size: 36px; }
+}
+
+@media (hover: none) {
+  /* Disable hover lifts on touch devices to prevent sticky states */
+  .offer-card:hover,
+  .mosaic-tile:hover,
+  .btn-primary:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
