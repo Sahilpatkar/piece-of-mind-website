@@ -28,3 +28,8 @@ em, .italic { font-style: italic; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------- Top bar ---------- */
+#topbar.is-scrolled {
+  border-bottom-color: rgba(44, 62, 62, 0.1);
+}
