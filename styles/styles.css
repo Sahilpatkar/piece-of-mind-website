@@ -261,3 +261,35 @@ em, .italic { font-style: italic; }
   text-transform: uppercase;
   opacity: 0.75;
 }
+
+/* ---------- Founder ---------- */
+.founder-photo {
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 40% 30%, rgba(251,250,247,0.7) 0%, transparent 35%),
+    linear-gradient(135deg, var(--sand), var(--clay), var(--sage));
+  background-size: cover;
+  background-position: center;
+  transform: rotate(1.2deg);
+  box-shadow: 0 20px 40px rgba(44,62,62,0.15);
+}
+.founder-h2 {
+  font-size: clamp(34px, 4vw, 44px);
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 16px 0 0;
+}
+.founder-quote {
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.45;
+  color: var(--forest);
+  margin: 22px 0;
+}
+.founder-q {
+  font-size: 48px;
+  line-height: 0;
+  vertical-align: -14px;
+  color: var(--clay);
+  margin-right: 6px;
+}
