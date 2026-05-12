@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops &amp; Events — Piece of Mind</title>
+  <meta name="description" content="Community workshops and events. Because mental health can be meaningful and fun." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <meta property="og:title" content="Workshops &amp; Events — Piece of Mind" />
+  <meta property="og:description" content="Community workshops and events. Because mental health can be meaningful and fun." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pieceofmind.co.in/workshops" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body class="bg-[var(--off)] text-[var(--ink)] font-sans antialiased">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header id="topbar" class="sticky top-0 z-50 bg-[var(--off)]/95 backdrop-blur-sm border-b border-transparent transition-colors">
+    <div class="max-w-[1100px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+      <a href="index.html" class="serif italic text-2xl text-[var(--forest)]">Piece of Mind</a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm">
+        <a href="about.html" class="opacity-80 hover:opacity-100">About</a>
+        <div class="nav-services" tabindex="0">
+          <span class="nav-services-btn">Services <span class="nav-services-chevron" aria-hidden="true">▾</span></span>
+          <div class="services-dropdown" role="list">
+            <a href="individual-therapy.html" role="listitem">Individual Therapy</a>
+            <a href="corporate.html" role="listitem">Corporate Well-being</a>
+            <a href="workshops.html" role="listitem" aria-current="page">Workshops &amp; Events</a>
+          </div>
+        </div>
+        <a href="book.html" class="bg-[var(--forest)] text-[var(--off)] px-5 py-2.5 rounded-full hover:scale-[1.04] transition-transform">Book a Session</a>
+      </nav>
+
+      <button id="navToggle" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="block w-5 h-px bg-[var(--ink)]"></span>
+        <span class="block w-5 h-px bg-[var(--ink)]"></span>
+        <span class="block w-5 h-px bg-[var(--ink)]"></span>
+      </button>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden border-t border-[var(--ink)]/10 bg-[var(--off)]">
+      <nav class="px-6 py-5 flex flex-col gap-4 text-sm">
+        <a href="about.html" class="opacity-80">About</a>
+        <div>
+          <span class="font-medium">Services</span>
+          <div class="mobile-sub-links">
+            <a href="individual-therapy.html">Individual Therapy</a>
+            <a href="corporate.html">Corporate Well-being</a>
+            <a href="workshops.html" aria-current="page">Workshops &amp; Events</a>
+          </div>
+        </div>
+        <a href="book.html" class="bg-[var(--forest)] text-[var(--off)] px-5 py-3 rounded-full text-center">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero — clay-rose bg for warm, community feeling -->
+    <section aria-labelledby="ws-hero-h1" class="hero-clay relative overflow-hidden py-16 lg:py-24">
+      <div class="hero-leaf hero-leaf-1" aria-hidden="true"></div>
+      <div class="hero-leaf hero-leaf-2" aria-hidden="true"></div>
+
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10 relative z-10">
+        <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+
+          <div>
+            <p class="eyebrow">Services / Workshops &amp; Events</p>
+            <h1 id="ws-hero-h1" class="serif hero-h1">
+              <span class="word">Mental health,</span>
+              <span class="word">in</span>
+              <span class="word"><em>good</em></span>
+              <span class="word">company.</span>
+            </h1>
+            <p class="text-[17px] leading-relaxed opacity-80 mt-6 max-w-[44ch]">
+              Spaces to learn, reflect, and grow as a community. Because mental health can be meaningful — and fun.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="mailto:hello@pieceofmind.co.in?subject=Subscribe" class="btn-primary">Subscribe for Updates</a>
+              <a href="book.html" class="btn-ghost">Book a private workshop</a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="hero-photo" role="img" aria-label="A warm community gathering"
+              style="background:radial-gradient(circle at 35% 25%, rgba(251,250,247,0.75) 0%, transparent 30%), linear-gradient(155deg, var(--clay) 0%, var(--sage) 60%, var(--sand) 130%);"></div>
+            <div class="hero-mini serif italic" aria-hidden="true">we'd love to <em>see you there</em></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming -->
+    <section aria-labelledby="upcoming-h2" class="bg-[var(--off)] py-20 lg:py-24">
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
+        <div class="section-head">
+          <p class="eyebrow">Upcoming</p>
+          <h2 id="upcoming-h2" class="serif">What's <em>next</em>.</h2>
+        </div>
+
+        <div class="upcoming-banner max-w-[680px] mx-auto">
+          <p class="serif italic text-[18px] opacity-70 mb-3">Nothing announced yet — but something is always brewing.</p>
+          <p>No upcoming events scheduled right now. <a href="mailto:hello@pieceofmind.co.in?subject=Subscribe" class="underline underline-offset-4 font-medium hover:opacity-100 opacity-80">Subscribe to be the first to know</a> when the next gathering happens.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous Events Gallery -->
+    <section aria-labelledby="gallery-h2" class="bg-[var(--sand)] py-20 lg:py-24">
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
+        <div class="section-head">
+          <p class="eyebrow">Moments</p>
+          <h2 id="gallery-h2" class="serif">Glimpses from <em>past events</em>.</h2>
+        </div>
+
+        <div class="mosaic-grid">
+          <div class="mosaic-tile mosaic-tile--lg mosaic-tile-1" role="img" aria-label="Grief circle in Pune"><span class="mosaic-label">Grief circle · Pune</span></div>
+          <div class="mosaic-tile mosaic-tile-2" role="img" aria-label="Anxiety toolkit workshop"><span class="mosaic-label">Anxiety toolkit workshop</span></div>
+          <div class="mosaic-tile mosaic-tile-3" role="img" aria-label="Founders' mental health night"><span class="mosaic-label">Founders' mental health night</span></div>
+          <div class="mosaic-tile mosaic-tile-4" role="img" aria-label="Therapy myth-busting session"><span class="mosaic-label">Therapy myth-busting</span></div>
+          <div class="mosaic-tile mosaic-tile-5" role="img" aria-label="Self-compassion sit-down"><span class="mosaic-label">Self-compassion sit-down</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Join -->
+    <section aria-labelledby="why-h2" class="bg-[var(--off)] py-20 lg:py-24">
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
+        <div class="section-head">
+          <p class="eyebrow">Why join</p>
+          <h2 id="why-h2" class="serif">What you'll <em>take away</em>.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+          <div class="value-card">
+            <div class="value-dot" style="background:var(--clay);" aria-hidden="true"></div>
+            <h3>Connection</h3>
+            <p>Be around others who get it. Community holds something that sessions alone can't.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-dot" style="background:var(--sage);" aria-hidden="true"></div>
+            <h3>Practical tools</h3>
+            <p>Leave with something you can use — not just something you've heard.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-dot" style="background:var(--sand);border:2px solid var(--clay);" aria-hidden="true"></div>
+            <h3>No pressure</h3>
+            <p>Show up exactly as much as you want to. Every gathering is low-stakes by design.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section aria-labelledby="newsletter-h2" class="bg-[var(--sage)] py-20 lg:py-24 px-6">
+      <div class="newsletter">
+        <h2 id="newsletter-h2" class="serif">Get the <em>next invitation</em>.</h2>
+        <p>We send 1-2 emails a month — workshops, community events, and the occasional reflection. No spam.</p>
+        <a href="mailto:hello@pieceofmind.co.in?subject=Subscribe%20to%20Piece%20of%20Mind" class="btn-primary">Subscribe via email →</a>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section aria-labelledby="ws-cta-h2" class="cta-strip bg-[var(--forest)] text-[var(--off)] py-20 lg:py-24 px-6 text-center relative overflow-hidden">
+      <div class="cta-deco cta-deco-1" aria-hidden="true"></div>
+      <div class="cta-deco cta-deco-2" aria-hidden="true"></div>
+      <div class="relative max-w-2xl mx-auto">
+        <h2 id="ws-cta-h2" class="serif cta-h2">Want a workshop for <em>your group</em>?</h2>
+        <p class="opacity-80 mt-3 mb-7">Private workshops for friend groups, communities, and small teams.</p>
+        <a href="book.html" class="btn-primary cta-btn">Book a Private Workshop →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[var(--forest)] text-[var(--off)] pt-16 pb-7 px-6">
+    <div class="max-w-[1040px] mx-auto grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-10">
+
+      <div>
+        <h4 class="serif italic text-xl mb-4">Piece of Mind</h4>
+        <p class="opacity-75 text-[13px] leading-relaxed">Compassionate mental health support for individuals, groups, and organizations.</p>
+        <div class="flex gap-2.5 mt-5">
+          <a href="#" aria-label="LinkedIn" class="foot-soc">in</a>
+          <a href="#" aria-label="Instagram" class="foot-soc">ig</a>
+          <a href="#" aria-label="Facebook" class="foot-soc">fb</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="serif italic text-lg mb-4">Explore</h4>
+        <ul class="space-y-2 text-[13px] opacity-80">
+          <li><a href="about.html">About</a></li>
+          <li><a href="individual-therapy.html">Individual Therapy</a></li>
+          <li><a href="corporate.html">Corporate Well-being</a></li>
+          <li><a href="workshops.html">Workshops &amp; Events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="serif italic text-lg mb-4">Services</h4>
+        <ul class="space-y-2 text-[13px] opacity-80">
+          <li><a href="individual-therapy.html">Individual Therapy</a></li>
+          <li><a href="corporate.html">Corporate Well-being</a></li>
+          <li><a href="workshops.html">Community Events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="serif italic text-lg mb-4">Get in touch</h4>
+        <ul class="space-y-2 text-[13px] opacity-80">
+          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80">hello@pieceofmind.co.in</a></li>
+          <li>+91 — to be added</li>
+          <li>Pune, India</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-[1040px] mx-auto mt-10 pt-5 border-t border-white/15 flex justify-between text-xs opacity-60">
+      <span>© <span id="footYear">2026</span> Piece of Mind</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
