@@ -552,3 +552,351 @@ button:focus-visible {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* ---------- Nav: Services dropdown ---------- */
+.nav-services {
+  position: relative;
+}
+.services-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--off);
+  border: 1px solid rgba(44, 62, 62, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(44, 62, 62, 0.12);
+  padding: 10px 6px;
+  min-width: 210px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  transform: translateX(-50%) translateY(-6px);
+  z-index: 60;
+}
+.nav-services:hover .services-dropdown,
+.nav-services:focus-within .services-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.services-dropdown a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 13px;
+  border-radius: 9px;
+  color: var(--ink);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: background 0.15s, opacity 0.15s;
+}
+.services-dropdown a:hover {
+  background: var(--sand);
+  opacity: 1;
+}
+.nav-services-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.nav-services-btn:hover { opacity: 1; }
+.nav-services-chevron {
+  font-size: 9px;
+  transition: transform 0.18s;
+  display: inline-block;
+}
+.nav-services:hover .nav-services-chevron,
+.nav-services:focus-within .nav-services-chevron {
+  transform: rotate(180deg);
+}
+
+/* Mobile nav indented sub-links */
+.mobile-sub-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+.mobile-sub-links a {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* ---------- Page: About ---------- */
+.value-card {
+  background: var(--off);
+  border-radius: 18px;
+  padding: 32px 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 36px rgba(44, 62, 62, 0.1);
+}
+.value-card .value-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+.value-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--forest);
+}
+.value-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* About hero (content-only, no photo) */
+.about-hero-h1 {
+  font-size: clamp(44px, 7vw, 80px);
+  line-height: 1.0;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+  margin: 18px 0 0;
+}
+
+/* Intro section two-col photo */
+.intro-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(251,250,247,0.8) 0%, transparent 30%),
+    linear-gradient(145deg, var(--sage) 0%, var(--clay) 60%, var(--sand) 100%);
+  box-shadow: 0 16px 40px rgba(44,62,62,0.18);
+  transform: rotate(2deg);
+}
+
+/* Founder pull quote on about page */
+.about-pull-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.45;
+  color: var(--forest);
+  border-left: 3px solid var(--clay);
+  padding-left: 24px;
+  margin: 32px 0;
+}
+
+/* ---------- Page: Individual Therapy ---------- */
+.help-pill {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ink);
+}
+.help-pill--sand { background: var(--sand); }
+.help-pill--sage { background: var(--sage); }
+.help-pill--clay { background: var(--clay); }
+.help-pill--off { background: var(--off); border: 1.5px solid rgba(44,62,62,0.2); }
+
+.step-card {
+  background: var(--sand);
+  border-radius: 18px;
+  padding: 38px 30px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 36px rgba(44, 62, 62, 0.1);
+}
+.step-card--dark {
+  background: var(--forest);
+  color: var(--off);
+}
+.step-card--warm {
+  background: var(--clay);
+}
+.step-n {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--sage);
+  margin-bottom: 18px;
+  display: block;
+}
+.step-card--dark .step-n { color: var(--clay); }
+.step-card--warm .step-n { color: var(--forest); opacity: 0.5; }
+.step-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.step-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0;
+}
+.step-card--dark p { opacity: 0.75; }
+
+/* ---------- Page: Corporate ---------- */
+.hero-forest {
+  background: var(--forest);
+  color: var(--off);
+}
+.hero-forest .eyebrow { color: var(--off); }
+.hero-forest .eyebrow::before { background: var(--off); opacity: 0.5; }
+.hero-forest .hero-leaf-1 {
+  background: var(--sage);
+  opacity: 0.15;
+}
+.hero-forest .hero-leaf-2 {
+  background: var(--sand);
+  opacity: 0.12;
+}
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 32px;
+  padding: 16px 0;
+}
+.logo-chip {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+.workshop-card {
+  background: var(--off);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(44, 62, 62, 0.12);
+}
+.workshop-card--featured {
+  background: var(--forest);
+  color: var(--off);
+}
+.workshop-color-bar {
+  height: 8px;
+}
+.workshop-body {
+  padding: 22px 22px 26px;
+}
+.workshop-body h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--forest);
+}
+.workshop-card--featured .workshop-body h3 {
+  color: var(--off);
+}
+.workshop-body p {
+  font-size: 13px;
+  line-height: 1.55;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* ---------- Page: Workshops & Events ---------- */
+.hero-clay {
+  background: var(--clay);
+}
+.hero-clay .hero-leaf-1 {
+  background: var(--forest);
+  opacity: 0.12;
+}
+.hero-clay .hero-leaf-2 {
+  background: var(--sage);
+  opacity: 0.3;
+}
+
+.upcoming-banner {
+  background: var(--sand);
+  border-radius: 16px;
+  padding: 32px 36px;
+  text-align: center;
+  border: 1.5px dashed rgba(44,62,62,0.2);
+}
+.upcoming-banner p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.75;
+  max-width: 52ch;
+  margin: 0 auto;
+}
+
+.newsletter {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsletter h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 40px);
+  line-height: 1.1;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.newsletter p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+/* ---------- Hero variant: clay bg ---------- */
+.hero-clay .btn-primary {
+  background: var(--forest);
+  color: var(--off);
+}
+.hero-clay .btn-ghost {
+  color: var(--forest);
+}
+
+/* ---------- Corporate hero btn variant ---------- */
+.btn-primary-light {
+  display: inline-block;
+  background: var(--off);
+  color: var(--forest);
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+.btn-ghost-light {
+  display: inline-block;
+  color: var(--off);
+  padding: 14px 8px;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 0.8;
+}
+.btn-ghost-light:hover { opacity: 1; }
