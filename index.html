@@ -28,11 +28,15 @@
       <a href="index.html" class="serif italic text-2xl text-[var(--forest)]">Piece of Mind</a>
 
       <nav class="hidden md:flex items-center gap-7 text-sm">
-        <a href="#" class="opacity-80 hover:opacity-100">About</a>
-        <a href="#services" class="opacity-80 hover:opacity-100">Services</a>
-        <a href="#" class="opacity-80 hover:opacity-100">Workshops</a>
-        <a href="#" class="opacity-80 hover:opacity-100">Journal</a>
-        <a href="#" class="opacity-80 hover:opacity-100">Contact</a>
+        <a href="about.html" class="opacity-80 hover:opacity-100">About</a>
+        <div class="nav-services" tabindex="0">
+          <span class="nav-services-btn">Services <span class="nav-services-chevron" aria-hidden="true">▾</span></span>
+          <div class="services-dropdown" role="list">
+            <a href="individual-therapy.html" role="listitem">Individual Therapy</a>
+            <a href="corporate.html" role="listitem">Corporate Well-being</a>
+            <a href="workshops.html" role="listitem">Workshops &amp; Events</a>
+          </div>
+        </div>
         <a href="book.html" class="bg-[var(--forest)] text-[var(--off)] px-5 py-2.5 rounded-full hover:scale-[1.04] transition-transform">Book a Session</a>
       </nav>
 
@@ -45,11 +49,15 @@
 
     <div id="mobileNav" class="md:hidden hidden border-t border-[var(--ink)]/10 bg-[var(--off)]">
       <nav class="px-6 py-5 flex flex-col gap-4 text-sm">
-        <a href="#">About</a>
-        <a href="#services">Services</a>
-        <a href="#">Workshops</a>
-        <a href="#">Journal</a>
-        <a href="#">Contact</a>
+        <a href="about.html">About</a>
+        <div>
+          <span class="opacity-80">Services</span>
+          <div class="mobile-sub-links">
+            <a href="individual-therapy.html">Individual Therapy</a>
+            <a href="corporate.html">Corporate Well-being</a>
+            <a href="workshops.html">Workshops &amp; Events</a>
+          </div>
+        </div>
         <a href="book.html" class="bg-[var(--forest)] text-[var(--off)] px-5 py-3 rounded-full text-center">Book a Session</a>
       </nav>
     </div>
@@ -110,7 +118,7 @@
 
         <div class="grid md:grid-cols-3 gap-5 lg:gap-6">
 
-          <a href="#" class="offer-card">
+          <a href="individual-therapy.html" class="offer-card">
             <div class="offer-photo offer-photo-1" role="img" aria-label="Photo for individual therapy"></div>
             <div class="offer-body">
               <h3 class="serif italic">Individual Therapy</h3>
@@ -119,7 +127,7 @@
             </div>
           </a>
 
-          <a href="#" class="offer-card offer-card--featured">
+          <a href="corporate.html" class="offer-card offer-card--featured">
             <div class="offer-photo offer-photo-2" role="img" aria-label="Photo for corporate well-being"></div>
             <div class="offer-body">
               <h3 class="serif italic">Corporate Well-being</h3>
@@ -128,7 +136,7 @@
             </div>
           </a>
 
-          <a href="#" class="offer-card offer-card--warm">
+          <a href="workshops.html" class="offer-card offer-card--warm">
             <div class="offer-photo offer-photo-3" role="img" aria-label="Photo for workshops and events"></div>
             <div class="offer-body">
               <h3 class="serif italic">Workshops &amp; Events</h3>
@@ -162,7 +170,7 @@
           <p class="opacity-75 text-[15px] leading-relaxed">
             A trauma-informed, queer-affirmative psychotherapist working with individuals, groups, and organizations to make mental health feel a little less lonely. Integrative, person-centered, and committed to meeting you where you are.
           </p>
-          <a href="#" class="btn-primary mt-6 inline-block">Read my story →</a>
+          <a href="about.html" class="btn-primary mt-6 inline-block">Read my story →</a>
         </div>
 
       </div>
@@ -314,20 +322,19 @@
       <div>
         <h4 class="serif italic text-lg mb-4">Explore</h4>
         <ul class="space-y-2 text-[13px] opacity-80">
-          <li><a href="#">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#">Workshops</a></li>
-          <li><a href="#">Journal</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="individual-therapy.html">Individual Therapy</a></li>
+          <li><a href="corporate.html">Corporate Well-being</a></li>
+          <li><a href="workshops.html">Workshops &amp; Events</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="serif italic text-lg mb-4">Services</h4>
         <ul class="space-y-2 text-[13px] opacity-80">
-          <li><a href="#">Individual Therapy</a></li>
-          <li><a href="#">Corporate Well-being</a></li>
-          <li><a href="#">Community Events</a></li>
+          <li><a href="individual-therapy.html">Individual Therapy</a></li>
+          <li><a href="corporate.html">Corporate Well-being</a></li>
+          <li><a href="workshops.html">Community Events</a></li>
         </ul>
       </div>
 
