@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Well-being — Piece of Mind</title>
+  <meta name="description" content="Practical, interactive workshops to support employee well-being and workplace effectiveness." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <meta property="og:title" content="Corporate Well-being — Piece of Mind" />
+  <meta property="og:description" content="Practical, interactive workshops to support employee well-being and workplace effectiveness." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pieceofmind.co.in/corporate" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body class="bg-[var(--off)] text-[var(--ink)] font-sans antialiased">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header id="topbar" class="sticky top-0 z-50 bg-[var(--off)]/95 backdrop-blur-sm border-b border-transparent transition-colors">
+    <div class="max-w-[1100px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+      <a href="index.html" class="serif italic text-2xl text-[var(--forest)]">Piece of Mind</a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm">
+        <a href="about.html" class="opacity-80 hover:opacity-100">About</a>
+        <div class="nav-services" tabindex="0">
+          <span class="nav-services-btn">Services <span class="nav-services-chevron" aria-hidden="true">▾</span></span>
+          <div class="services-dropdown" role="list">
+            <a href="individual-therapy.html" role="listitem">Individual Therapy</a>
+            <a href="corporate.html" role="listitem" aria-current="page">Corporate Well-being</a>
+            <a href="workshops.html" role="listitem">Workshops &amp; Events</a>
+          </div>
+        </div>
+        <a href="book.html" class="bg-[var(--forest)] text-[var(--off)] px-5 py-2.5 rounded-full hover:scale-[1.04] transition-transform">Book a Session</a>
+      </nav>
+
+      <button id="navToggle" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="block w-5 h-px bg-[var(--ink)]"></span>
+        <span class="block w-5 h-px bg-[var(--ink)]"></span>
+        <span class="block w-5 h-px bg-[var(--ink)]"></span>
+      </button>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden border-t border-[var(--ink)]/10 bg-[var(--off)]">
+      <nav class="px-6 py-5 flex flex-col gap-4 text-sm">
+        <a href="about.html" class="opacity-80">About</a>
+        <div>
+          <span class="font-medium">Services</span>
+          <div class="mobile-sub-links">
+            <a href="individual-therapy.html">Individual Therapy</a>
+            <a href="corporate.html" aria-current="page">Corporate Well-being</a>
+            <a href="workshops.html">Workshops &amp; Events</a>
+          </div>
+        </div>
+        <a href="book.html" class="bg-[var(--forest)] text-[var(--off)] px-5 py-3 rounded-full text-center">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero — forest-green bg for B2B contrast -->
+    <section aria-labelledby="corp-hero-h1" class="hero-forest relative overflow-hidden py-16 lg:py-24">
+      <div class="hero-leaf hero-leaf-1" aria-hidden="true"></div>
+      <div class="hero-leaf hero-leaf-2" aria-hidden="true"></div>
+
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10 relative z-10">
+        <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+
+          <div>
+            <p class="eyebrow" style="color:var(--off);">Services / Corporate Well-being</p>
+            <h1 id="corp-hero-h1" class="serif hero-h1" style="color:var(--off);">
+              <span class="word">Workshops</span>
+              <span class="word">that</span>
+              <span class="word"><em>actually</em></span>
+              <span class="word">work.</span>
+            </h1>
+            <p class="text-[17px] leading-relaxed mt-6 max-w-[44ch]" style="color:var(--off);opacity:0.8;">
+              Practical, interactive mental health and well-being workshops for teams. Online or in-person, tailored to your culture.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="book.html" class="btn-primary-light">Book a Discovery Call →</a>
+              <a href="book.html" class="btn-ghost-light">See the workshops</a>
+            </div>
+            <div class="mt-8 flex flex-wrap items-center gap-7 text-xs" style="color:var(--off);opacity:0.65;">
+              <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[var(--sage)]"></span>Online or in-person</span>
+              <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[var(--sage)]"></span>Tailored to your team</span>
+              <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[var(--sage)]"></span>Evidence-backed</span>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="hero-photo" role="img" aria-label="A team well-being workshop"
+              style="background:radial-gradient(circle at 35% 25%, rgba(183,201,179,0.4) 0%, transparent 30%), linear-gradient(155deg, var(--forest) 0%, var(--sage) 60%, var(--sand) 130%);"></div>
+            <div class="hero-mini serif italic" aria-hidden="true" style="background:linear-gradient(135deg,var(--sage),var(--sand));">for teams that <em>care</em></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section aria-labelledby="trusted-h3" class="bg-[var(--off)] py-16">
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10 text-center">
+        <p class="eyebrow">Trusted by</p>
+        <h3 id="trusted-h3" class="serif italic text-[20px] font-normal mt-3 mb-8 opacity-70">Teams that have grown with us.</h3>
+
+        <div class="logo-strip">
+          <span class="logo-chip">TealFeed</span>
+          <span class="logo-chip">Brand 2</span>
+          <span class="logo-chip">Brand 3</span>
+          <span class="logo-chip">Brand 4</span>
+          <span class="logo-chip">Brand 5</span>
+          <span class="logo-chip">Brand 6</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops Offered -->
+    <section aria-labelledby="workshops-h2" class="bg-[var(--sand)] py-20 lg:py-24">
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
+        <div class="section-head">
+          <p class="eyebrow">Workshops offered</p>
+          <h2 id="workshops-h2" class="serif">Built for <em>real workplaces</em>.</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <div class="workshop-card">
+            <div class="workshop-color-bar" style="background:var(--sage);"></div>
+            <div class="workshop-body">
+              <h3>Stress management</h3>
+              <p>Practical tools for managing pressure without burning out.</p>
+            </div>
+          </div>
+
+          <div class="workshop-card">
+            <div class="workshop-color-bar" style="background:var(--clay);"></div>
+            <div class="workshop-body">
+              <h3>Improving focus</h3>
+              <p>Sustainable strategies for attention in a distracted world.</p>
+            </div>
+          </div>
+
+          <div class="workshop-card">
+            <div class="workshop-color-bar" style="background:var(--sand);border-bottom:2px solid var(--clay);"></div>
+            <div class="workshop-body">
+              <h3>Emotional regulation</h3>
+              <p>Working skilfully with strong emotions at work.</p>
+            </div>
+          </div>
+
+          <div class="workshop-card">
+            <div class="workshop-color-bar" style="background:var(--sage);opacity:0.6;"></div>
+            <div class="workshop-body">
+              <h3>Managing procrastination</h3>
+              <p>The why behind avoidance, and what to do about it.</p>
+            </div>
+          </div>
+
+          <div class="workshop-card">
+            <div class="workshop-color-bar" style="background:var(--clay);opacity:0.7;"></div>
+            <div class="workshop-body">
+              <h3>Anxiety management</h3>
+              <p>Tools to work with anxiety, not against it.</p>
+            </div>
+          </div>
+
+          <div class="workshop-card">
+            <div class="workshop-color-bar" style="background:var(--sage);"></div>
+            <div class="workshop-body">
+              <h3>Communication skills</h3>
+              <p>Difficult conversations, made easier.</p>
+            </div>
+          </div>
+
+          <div class="workshop-card workshop-card--featured lg:col-span-2">
+            <div class="workshop-color-bar" style="background:var(--sage);opacity:0.4;"></div>
+            <div class="workshop-body">
+              <h3>Tailor-made workshops</h3>
+              <p>Tell us what your team needs. We'll build it.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Partner -->
+    <section aria-labelledby="partner-h2" class="bg-[var(--off)] py-20 lg:py-24">
+      <div class="max-w-[1040px] mx-auto px-6 lg:px-10">
+        <div class="section-head">
+          <p class="eyebrow">How we partner</p>
+          <h2 id="partner-h2" class="serif">From <em>brief to delivery</em>.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+          <div class="step-card">
+            <span class="step-n">01</span>
+            <h3>Discovery call</h3>
+            <p>We meet, listen, and understand your team's context and needs.</p>
+          </div>
+
+          <div class="step-card step-card--dark">
+            <span class="step-n">02</span>
+            <h3>Custom plan</h3>
+            <p>We design a workshop that fits your culture, team size, and goals.</p>
+          </div>
+
+          <div class="step-card step-card--warm">
+            <span class="step-n">03</span>
+            <h3>Delivery &amp; follow-up</h3>
+            <p>We facilitate the session and check in afterward to measure impact.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section aria-labelledby="corp-cta-h2" class="cta-strip bg-[var(--forest)] text-[var(--off)] py-20 lg:py-24 px-6 text-center relative overflow-hidden">
+      <div class="cta-deco cta-deco-1" aria-hidden="true"></div>
+      <div class="cta-deco cta-deco-2" aria-hidden="true"></div>
+      <div class="relative max-w-2xl mx-auto">
+        <h2 id="corp-cta-h2" class="serif cta-h2">Let's build something for <em>your team</em>.</h2>
+        <p class="opacity-80 mt-3 mb-7">30-minute discovery call. No commitment.</p>
+        <a href="book.html" class="btn-primary cta-btn">Book a Discovery Call →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[var(--forest)] text-[var(--off)] pt-16 pb-7 px-6">
+    <div class="max-w-[1040px] mx-auto grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-10">
+
+      <div>
+        <h4 class="serif italic text-xl mb-4">Piece of Mind</h4>
+        <p class="opacity-75 text-[13px] leading-relaxed">Compassionate mental health support for individuals, groups, and organizations.</p>
+        <div class="flex gap-2.5 mt-5">
+          <a href="#" aria-label="LinkedIn" class="foot-soc">in</a>
+          <a href="#" aria-label="Instagram" class="foot-soc">ig</a>
+          <a href="#" aria-label="Facebook" class="foot-soc">fb</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="serif italic text-lg mb-4">Explore</h4>
+        <ul class="space-y-2 text-[13px] opacity-80">
+          <li><a href="about.html">About</a></li>
+          <li><a href="individual-therapy.html">Individual Therapy</a></li>
+          <li><a href="corporate.html">Corporate Well-being</a></li>
+          <li><a href="workshops.html">Workshops &amp; Events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="serif italic text-lg mb-4">Services</h4>
+        <ul class="space-y-2 text-[13px] opacity-80">
+          <li><a href="individual-therapy.html">Individual Therapy</a></li>
+          <li><a href="corporate.html">Corporate Well-being</a></li>
+          <li><a href="workshops.html">Community Events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="serif italic text-lg mb-4">Get in touch</h4>
+        <ul class="space-y-2 text-[13px] opacity-80">
+          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80">hello@pieceofmind.co.in</a></li>
+          <li>+91 — to be added</li>
+          <li>Pune, India</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-[1040px] mx-auto mt-10 pt-5 border-t border-white/15 flex justify-between text-xs opacity-60">
+      <span>© <span id="footYear">2026</span> Piece of Mind</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
