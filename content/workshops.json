@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Stress management",
+      "description": "Practical tools for managing pressure without burning out.",
+      "color": "sage",
+      "featured": false
+    },
+    {
+      "title": "Improving focus",
+      "description": "Sustainable strategies for attention in a distracted world.",
+      "color": "clay",
+      "featured": false
+    },
+    {
+      "title": "Emotional regulation",
+      "description": "Working skilfully with strong emotions at work.",
+      "color": "sand-clay",
+      "featured": false
+    },
+    {
+      "title": "Managing procrastination",
+      "description": "The why behind avoidance, and what to do about it.",
+      "color": "sage-soft",
+      "featured": false
+    },
+    {
+      "title": "Anxiety management",
+      "description": "Tools to work with anxiety, not against it.",
+      "color": "clay-soft",
+      "featured": false
+    },
+    {
+      "title": "Communication skills",
+      "description": "Difficult conversations, made easier.",
+      "color": "sage",
+      "featured": false
+    },
+    {
+      "title": "Tailor-made workshops",
+      "description": "Tell us what your team needs. We'll build it.",
+      "color": "sage-faint",
+      "featured": true
+    }
+  ]
+}

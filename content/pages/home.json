@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "eyebrow": "Mental health support",
+    "headline_words": ["Every", "*piece*", "of you", "matters."],
+    "subhead": "Non-judgmental, compassionate mental health support for individuals, groups, and organizations.",
+    "primary_cta_label": "Book a Therapy Session →",
+    "secondary_cta_label": "Free 15-min consult",
+    "badges": ["Online worldwide", "In-person · Pune", "Confidential"],
+    "photo": "",
+    "photo_alt": "A calming photo of a quiet space",
+    "mini_caption": "a space|to feel|*whole*"
+  },
+  "founder": {
+    "eyebrow": "Meet your therapist",
+    "heading_html": "Hi, I'm *Anshita*.",
+    "quote": "Showing up as you are is the most courageous thing you can do — and you don't have to do it alone.",
+    "bio": "A trauma-informed, queer-affirmative psychotherapist working with individuals, groups, and organizations to make mental health feel a little less lonely. Integrative, person-centered, and committed to meeting you where you are.",
+    "cta_label": "Read my story →",
+    "photo": "",
+    "photo_alt": "Portrait of Anshita Gaur"
+  }
+}

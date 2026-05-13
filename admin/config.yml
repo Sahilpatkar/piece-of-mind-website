@@ -1,0 +1,132 @@
+backend:
+  name: github
+  repo: Sahilpatkar/piece-of-mind-website
+  branch: main
+
+publish_mode: simple
+
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+site_url: https://pieceofmind.co.in
+display_url: https://pieceofmind.co.in
+logo_url: https://pieceofmind.co.in/assets/favicon.svg
+
+collections:
+  - name: site
+    label: "Site-wide"
+    description: "Footer, contact info, social links — used on every page"
+    files:
+      - name: site
+        label: "Contact info & socials"
+        file: content/site.json
+        format: json
+        fields:
+          - { name: tagline, label: "Footer tagline", widget: string }
+          - { name: email, label: "Email address", widget: string, hint: "Used in footer + Get in touch CTA" }
+          - { name: phone, label: "Phone (display text)", widget: string, hint: "Shown as-is in the footer" }
+          - { name: address, label: "Address", widget: string }
+          - name: social
+            label: "Social links"
+            widget: object
+            hint: "Leave blank to hide a social icon in the footer."
+            fields:
+              - { name: linkedin, label: "LinkedIn URL", widget: string, required: false }
+              - { name: instagram, label: "Instagram URL", widget: string, required: false }
+              - { name: facebook, label: "Facebook URL", widget: string, required: false }
+
+  - name: lists
+    label: "Lists (testimonials, workshops, FAQs)"
+    description: "Add, edit, reorder, or remove items in any of these lists. Drag the handle on a row to reorder."
+    files:
+      - name: testimonials
+        label: "Testimonials carousel"
+        file: content/testimonials.json
+        format: json
+        fields:
+          - name: items
+            label: "Testimonials"
+            widget: list
+            summary: "{{fields.author}} — {{fields.quote}}"
+            fields:
+              - { name: quote, label: "Testimonial quote", widget: text }
+              - { name: author, label: "Author initials or short name", widget: string, hint: "e.g., RG, Pranav K" }
+
+      - name: workshops
+        label: "Corporate workshops grid"
+        file: content/workshops.json
+        format: json
+        fields:
+          - name: items
+            label: "Workshops"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: "Workshop title", widget: string }
+              - { name: description, label: "Short description", widget: text }
+              - name: color
+                label: "Accent color bar"
+                widget: select
+                default: sage
+                options:
+                  - { label: "Sage (solid)", value: sage }
+                  - { label: "Sage (soft)", value: sage-soft }
+                  - { label: "Sage (faint)", value: sage-faint }
+                  - { label: "Clay (solid)", value: clay }
+                  - { label: "Clay (soft)", value: clay-soft }
+                  - { label: "Sand + Clay edge", value: sand-clay }
+              - { name: featured, label: "Featured (wide card)", widget: boolean, default: false, hint: "Tick this for the wide 'Tailor-made workshops' style card." }
+
+      - name: faqs
+        label: "Homepage FAQ"
+        file: content/faqs.json
+        format: json
+        fields:
+          - name: items
+            label: "FAQ entries"
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - { name: question, label: "Question", widget: string }
+              - { name: answer, label: "Answer", widget: text }
+
+  - name: pages
+    label: "Pages"
+    description: "Per-page editable content (text + photos)"
+    files:
+      - name: home
+        label: "Homepage"
+        file: content/pages/home.json
+        format: json
+        fields:
+          - name: hero
+            label: "Hero section (top of homepage)"
+            widget: object
+            fields:
+              - { name: eyebrow, label: "Small text above the headline", widget: string }
+              - name: headline_words
+                label: "Headline (one word per line)"
+                hint: "Each line becomes one word in the staggered headline. Wrap a word in *asterisks* to make it italic."
+                widget: list
+                field: { name: word, label: "Word", widget: string }
+              - { name: subhead, label: "Subheadline (the paragraph under the headline)", widget: text }
+              - { name: primary_cta_label, label: "Primary button label", widget: string }
+              - { name: secondary_cta_label, label: "Secondary button label", widget: string }
+              - name: badges
+                label: "Trust badges (small dots row)"
+                widget: list
+                field: { name: badge, label: "Badge", widget: string }
+              - { name: photo, label: "Hero photo", widget: image, required: false, hint: "Leave blank to keep the styled placeholder background." }
+              - { name: photo_alt, label: "Hero photo alt text (for screen readers)", widget: string, required: false }
+              - { name: mini_caption, label: "Floating mini caption", widget: string, required: false, hint: "Use | to separate lines, *asterisks* for italic. Example: a space|to feel|*whole*" }
+          - name: founder
+            label: "Founder section (Meet your therapist)"
+            widget: object
+            fields:
+              - { name: eyebrow, label: "Small text above the heading", widget: string }
+              - { name: heading_html, label: "Heading", widget: string, hint: "Wrap a word in *asterisks* to italicize it. Example: Hi, I'm *Anshita*." }
+              - { name: quote, label: "Pull quote", widget: text }
+              - { name: bio, label: "Short bio paragraph", widget: text }
+              - { name: cta_label, label: "Button label", widget: string }
+              - { name: photo, label: "Portrait photo", widget: image, required: false }
+              - { name: photo_alt, label: "Portrait alt text (for screen readers)", widget: string, required: false }
