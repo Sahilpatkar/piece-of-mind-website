@@ -72,21 +72,21 @@
         <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
 
           <div>
-            <p class="eyebrow">Mental health support</p>
-            <h1 id="hero-h1" class="serif hero-h1">
+            <p class="eyebrow" data-cms="hero.eyebrow">Mental health support</p>
+            <h1 id="hero-h1" class="serif hero-h1" data-cms="hero.headline_words">
               <span class="word">Every</span>
               <span class="word italic">piece</span>
               <span class="word">of you</span>
               <span class="word">matters.</span>
             </h1>
-            <p class="text-[17px] leading-relaxed opacity-80 mt-6 max-w-[44ch]">
+            <p class="text-[17px] leading-relaxed opacity-80 mt-6 max-w-[44ch]" data-cms="hero.subhead">
               Non-judgmental, compassionate mental health support for individuals, groups, and organizations.
             </p>
             <div class="mt-8 flex flex-wrap items-center gap-3">
-              <a href="book.html" class="btn-primary">Book a Therapy Session →</a>
-              <a href="book.html" class="btn-ghost">Free 15-min consult</a>
+              <a href="book.html" class="btn-primary" data-cms="hero.primary_cta_label">Book a Therapy Session →</a>
+              <a href="book.html" class="btn-ghost" data-cms="hero.secondary_cta_label">Free 15-min consult</a>
             </div>
-            <div class="mt-8 flex flex-wrap items-center gap-7 text-xs opacity-65">
+            <div class="mt-8 flex flex-wrap items-center gap-7 text-xs opacity-65" data-cms="hero.badges">
               <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[var(--forest)]"></span>Online worldwide</span>
               <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[var(--forest)]"></span>In-person · Pune</span>
               <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[var(--forest)]"></span>Confidential</span>
@@ -94,8 +94,8 @@
           </div>
 
           <div class="relative">
-            <div class="hero-photo" role="img" aria-label="A calming photo of a quiet space"></div>
-            <div class="hero-mini serif italic" aria-hidden="true">a space<br/>to feel<br/><em>whole</em></div>
+            <div class="hero-photo" role="img" aria-label="A calming photo of a quiet space" data-cms="hero.photo"></div>
+            <div class="hero-mini serif italic" aria-hidden="true" data-cms="hero.mini_caption">a space<br/>to feel<br/><em>whole</em></div>
           </div>
 
         </div>
@@ -159,18 +159,18 @@
     <section id="founder" aria-labelledby="founder-h2" class="bg-[var(--off)] py-20 lg:py-24">
       <div class="max-w-[1040px] mx-auto px-6 lg:px-10 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 items-center">
 
-        <div class="founder-photo" role="img" aria-label="Portrait of Anshita Gaur"></div>
+        <div class="founder-photo" role="img" aria-label="Portrait of Anshita Gaur" data-cms="founder.photo"></div>
 
         <div>
-          <p class="eyebrow">Meet your therapist</p>
-          <h2 id="founder-h2" class="serif founder-h2">Hi, I'm <em>Anshita</em>.</h2>
+          <p class="eyebrow" data-cms="founder.eyebrow">Meet your therapist</p>
+          <h2 id="founder-h2" class="serif founder-h2" data-cms="founder.heading_html">Hi, I'm <em>Anshita</em>.</h2>
           <p class="founder-quote serif italic">
-            <span class="founder-q" aria-hidden="true">"</span>Showing up as you are is the most courageous thing you can do — and you don't have to do it alone.
+            <span class="founder-q" aria-hidden="true">"</span><span data-cms="founder.quote">Showing up as you are is the most courageous thing you can do — and you don't have to do it alone.</span>
           </p>
-          <p class="opacity-75 text-[15px] leading-relaxed">
+          <p class="opacity-75 text-[15px] leading-relaxed" data-cms="founder.bio">
             A trauma-informed, queer-affirmative psychotherapist working with individuals, groups, and organizations to make mental health feel a little less lonely. Integrative, person-centered, and committed to meeting you where you are.
           </p>
-          <a href="about.html" class="btn-primary mt-6 inline-block">Read my story →</a>
+          <a href="about.html" class="btn-primary mt-6 inline-block" data-cms="founder.cta_label">Read my story →</a>
         </div>
 
       </div>
@@ -182,7 +182,7 @@
       </div>
 
       <div class="testi-track-wrap">
-        <div class="testi-track">
+        <div class="testi-track" data-cms="testimonials.track">
 
           <article class="testi-card">
             <span class="testi-q serif" aria-hidden="true">"</span>
@@ -262,7 +262,7 @@
           <a href="mailto:hello@pieceofmind.co.in" class="btn-primary">Ask a question</a>
         </div>
 
-        <div class="faq-list">
+        <div class="faq-list" data-cms="faqs.list">
           <details class="faq-item" open>
             <summary class="faq-q"><span>How long is each session?</span><span class="faq-chev" aria-hidden="true">+</span></summary>
             <div class="faq-a">An introductory call lasts 15 minutes, and a regular session lasts 50–55 minutes.</div>
@@ -311,11 +311,11 @@
 
       <div>
         <h4 class="serif italic text-xl mb-4">Piece of Mind</h4>
-        <p class="opacity-75 text-[13px] leading-relaxed">Compassionate mental health support for individuals, groups, and organizations.</p>
+        <p class="opacity-75 text-[13px] leading-relaxed" data-cms="site.tagline">Compassionate mental health support for individuals, groups, and organizations.</p>
         <div class="flex gap-2.5 mt-5">
-          <a href="#" aria-label="LinkedIn" class="foot-soc">in</a>
-          <a href="#" aria-label="Instagram" class="foot-soc">ig</a>
-          <a href="#" aria-label="Facebook" class="foot-soc">fb</a>
+          <a href="#" aria-label="LinkedIn" class="foot-soc" data-cms="site.social.linkedin" hidden>in</a>
+          <a href="#" aria-label="Instagram" class="foot-soc" data-cms="site.social.instagram" hidden>ig</a>
+          <a href="#" aria-label="Facebook" class="foot-soc" data-cms="site.social.facebook" hidden>fb</a>
         </div>
       </div>
 
@@ -341,9 +341,9 @@
       <div>
         <h4 class="serif italic text-lg mb-4">Get in touch</h4>
         <ul class="space-y-2 text-[13px] opacity-80">
-          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80">hello@pieceofmind.co.in</a></li>
-          <li>+91 — to be added</li>
-          <li>Pune, India</li>
+          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80" data-cms="site.email">hello@pieceofmind.co.in</a></li>
+          <li data-cms="site.phone">+91 — to be added</li>
+          <li data-cms="site.address">Pune, India</li>
         </ul>
       </div>
 
@@ -356,5 +356,7 @@
   </footer>
 
   <script src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/render-footer.js"></script>
+  <script type="module" src="scripts/render-home.js"></script>
 </body>
 </html>

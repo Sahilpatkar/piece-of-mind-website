@@ -128,7 +128,7 @@
           <h2 id="workshops-h2" class="serif">Built for <em>real workplaces</em>.</h2>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4" data-cms="workshops.grid">
 
           <div class="workshop-card">
             <div class="workshop-color-bar" style="background:var(--sage);"></div>
@@ -240,11 +240,11 @@
 
       <div>
         <h4 class="serif italic text-xl mb-4">Piece of Mind</h4>
-        <p class="opacity-75 text-[13px] leading-relaxed">Compassionate mental health support for individuals, groups, and organizations.</p>
+        <p class="opacity-75 text-[13px] leading-relaxed" data-cms="site.tagline">Compassionate mental health support for individuals, groups, and organizations.</p>
         <div class="flex gap-2.5 mt-5">
-          <a href="#" aria-label="LinkedIn" class="foot-soc">in</a>
-          <a href="#" aria-label="Instagram" class="foot-soc">ig</a>
-          <a href="#" aria-label="Facebook" class="foot-soc">fb</a>
+          <a href="#" aria-label="LinkedIn" class="foot-soc" data-cms="site.social.linkedin" hidden>in</a>
+          <a href="#" aria-label="Instagram" class="foot-soc" data-cms="site.social.instagram" hidden>ig</a>
+          <a href="#" aria-label="Facebook" class="foot-soc" data-cms="site.social.facebook" hidden>fb</a>
         </div>
       </div>
 
@@ -270,9 +270,9 @@
       <div>
         <h4 class="serif italic text-lg mb-4">Get in touch</h4>
         <ul class="space-y-2 text-[13px] opacity-80">
-          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80">hello@pieceofmind.co.in</a></li>
-          <li>+91 — to be added</li>
-          <li>Pune, India</li>
+          <li><a href="mailto:hello@pieceofmind.co.in" class="hover:opacity-100 opacity-80" data-cms="site.email">hello@pieceofmind.co.in</a></li>
+          <li data-cms="site.phone">+91 — to be added</li>
+          <li data-cms="site.address">Pune, India</li>
         </ul>
       </div>
 
@@ -285,5 +285,7 @@
   </footer>
 
   <script src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/render-footer.js"></script>
+  <script type="module" src="scripts/render-corporate.js"></script>
 </body>
 </html>
